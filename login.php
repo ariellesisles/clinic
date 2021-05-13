@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Login and Registration</title>
+    <title>Student Login</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -33,7 +33,8 @@
     input[type=text]:focus,input[type=password]:focus {
     border: 3px solid #00D2FF;
     }
-     /* text field */
+     /* text field end */
+
     
     </style>
 
@@ -41,19 +42,18 @@
 <body class="bg-dark" >
     <div class="container mt-4">
        <div class="row">
-            <div class="col-lg-4 offset-lg-4" id="alert">
-                <div class="alert alert-success">
-               <!-- <strong id="result">hello world</strong> -->
-            </div>
         </div>
     </div>
 
     <!---------------- Login form --------------------->
+    
             <div class="row">
+            
             <!-- alertbox -->
                 <div class="col-lg-4 offset-lg-4 bg-light rounded" id="login-box">
+                <a href="index.php"><button type="button" class="m-3 btn btn-outline-primary">Back </button></a>
                 <h2 class="text-center mt-2">Student Login </h2>
-                <i class="fas fa-user-circle fa-4x d-flex justify-content-center align" style="color:#00D2FF"></i>
+                <i class="fas fa-user-circle fa-4x d-flex justify-content-center align"></i>
                 <form action="" method="post" role="form" class="p-2" id="login-form" >
             <!-- username -->
                 <div class="form-group">
@@ -80,76 +80,13 @@
                 <input type="submit" name="login" id="login" value="Login" class="btn btn-primary btn-block">   
                 </div>
                 <div class="form-group">
-                <p class="text-center">Don't have an account yet?<a href="#" id="signup-btn"> Sign-up</a></p>
+                <p class="text-center">Don't have an account yet?<a href="register.php" id="signup-btn"> Sign-up</a></p>
             </div>
 </div>
 </form>
 </div>
 </div>
-<!----------------Registrtaion Form--------------------->
-<div class="row">
-            <!-- alertbox -->
-                <div class="col-lg-4 offset-lg-4 bg-light rounded" id="register-box">
-                <h2 class="text-center mt-2">Register</h2>
-                <form action="" method="post" role="form" class="p-2" id="register-form">
 
-                <div class="row g-3">
-                <!-- First name -->
-                <div class="form-group col">
-                    <input type="text" name="fname" class="form-control" placeholder="First Name" aria-label="First name">
-                </div>
-                <!-- Last name -->
-                <div class="col">
-                    <input type="text" name="lname" class="form-control" placeholder="Last name" aria-label="Last name">
-                </div>
-                </div>
-            <!-- Username -->
-            <div class="form-group">
-                <!-- <label for="password" class="custom-control-label">Password</label> -->
-                <input type="text"  id="uname" name="pass" class="form-control" placeholder="Username" required>     
-            </div>
-
-            <!--Phone Number-->
-            <div class="form-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input name="contact_no" placeholder="(ex.+639x-xxxx-xxxx)" class="form-control" type="text">
-            </div>
-            <!-- Email-->
-            <div class="form-group">
-                <!-- <label for="password" class="custom-control-label">Password</label> -->
-                <input type="email"  id="email" name="email" class="form-control" placeholder="E-mail" required>     
-            </div>
-            <!-- Password-->
-            <div class="form-group">
-                <!-- <label for="password" class="custom-control-label">Password</label> -->
-                <input type="password"  id="pass" name="pass" class="form-control" placeholder="Password" required>     
-            </div>
-
-            <!--Confirm Password-->
-            <div class="form-group" style="height:5rem">
-                <!-- <label for="password" class="custom-control-label">Password</label> -->
-                <input type="password"  id="cpass" name="cpass" class="form-control" placeholder="Confirm Password" required>     
-            </div>
-
-            <!-- checkbox Terms & conditions -->
-            <div class="form-group">
-                <div class="custom-control custom-checkbox"style="height:2rem">
-                    <input type="checkbox" name="rem" class="custom-control-input" id="customCheck2">
-                    <label for="customCheck2" class="custom-control-label">I agree to the <a href="#">Terms & Conditions</a></label>
-                    
-            </div>
-
-            <!-- Register button -->
-            <div class="form-group">
-                <input type="submit" name="register" id="register" value="Register" class="btn btn-primary btn-block">   
-                </div>
-                <div class="form-group">
-                <p class="text-center">Already Registered?<a href="#" id="rlogin-btn"> Login Here</a></p>
-            </div>
-</div>
-</form>
-</div>
-</div>
 <!---------------- Forgot Password --------------------->
             <div class="row">
             <!-- alertbox -->

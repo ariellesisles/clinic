@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,9 +39,8 @@
             <li><a href="#about">Services</a></li>
             <li><a href="#post">Staff</a></li>
             <li><a href="#facility">facility</a></li>
-
-            <li><a href="#">Register</a></li>
-            <a href="#" ><button class="button1 ">Login</button></a>
+            <li><a href="register.php">Register</a></li>
+         <a href="login.php" ><button class="button1 ">Login</button></a>
             
         </ul>
     </nav>
